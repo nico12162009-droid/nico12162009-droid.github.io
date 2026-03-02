@@ -1,0 +1,860 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amazon.com.co: DEEP SYSTEM Elite</title>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TU_CODIGO_AQUI"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TU_CODIGO_AQUI');
+        </script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body { background-color: #EAEDED; font-family: "Amazon Ember", Arial, sans-serif; }
+            .sidebar-text { writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); }
+        </style>
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <header class="bg-[#131921] text-white sticky top-0 z-50 shadow-md">
+            <div class="max-w-[1500px] mx-auto flex items-center p-2 gap-4 px-6">
+                <h1 class="text-2xl font-black italic tracking-tighter cursor-pointer" onclick="filterCategory('todo')">DEEP<span class="text-[#FF9900]">SYSTEM</span></h1>
+                <div class="flex-grow flex items-center bg-white rounded-md overflow-hidden h-10">
+                    <input type="text" id="searchInput" class="flex-grow px-4 text-black text-sm outline-none" placeholder="Buscar entre cientos de ofertas verificadas por IA...">
+                    <button class="bg-[#FEBD69] px-6 h-full hover:bg-[#f3a847]">🔍</button>
+                </div>
+                <div class="hidden lg:flex flex-col text-xs px-3">
+                    <span>Hola, Nicolai</span> <span class="font-bold text-sm">Colombia</span>
+                </div>
+            </div>
+            <nav class="bg-[#232F3E] text-xs p-2 flex gap-8 px-10 font-bold overflow-x-auto shadow-inner">
+                <span onclick="filterCategory('todo')" class="hover:border-white border border-transparent p-1 cursor-pointer">≡ TODO</span>
+                <span onclick="filterCategory('tecnologia')" class="hover:border-white border border-transparent p-1 cursor-pointer">TECNOLOGÍA</span>
+                <span onclick="filterCategory('hogar')" class="hover:border-white border border-transparent p-1 cursor-pointer">HOGAR</span>
+                <span onclick="filterCategory('gaming')" class="hover:border-white border border-transparent p-1 cursor-pointer">GAMING</span>
+            </nav>
+        </header>
+
+        <div class="max-w-[1600px] mx-auto flex gap-4 p-4 flex-grow">
+            <aside class="hidden xl:flex w-24 bg-white/40 rounded-3xl flex-col items-center py-20 gap-32 border border-gray-300 shadow-inner">
+                <div class="sidebar-text text-gray-500 font-black uppercase text-[9px] tracking-[0.8em]">💎 GARANTÍA TOTAL AMAZON</div>
+                <div class="sidebar-text text-gray-500 font-black uppercase text-[9px] tracking-[0.8em]">🚀 ENVÍOS A TODO COLOMBIA</div>
+            </aside>
+
+            <main class="flex-grow">
+                <div class="bg-white p-6 mb-8 rounded-sm shadow-sm border-b-4 border-[#FF9900] flex justify-between items-end">
+                    <div>
+                        <h2 class="text-2xl font-black text-gray-800 uppercase italic">GANGAS DEL DÍA</h2>
+                        <p class="text-xs text-blue-600 font-bold">Ofertas se eliminan tras 24h para garantizar vigencia.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[9px] font-black text-gray-400 uppercase tracking-widest block">ÚLTIMA ACTUALIZACIÓN</span>
+                        <span class="text-sm font-black text-green-600">10:28 PM - 01/03/2026</span>
+                    </div>
+                </div>
+                <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="tecnologia" data-title="15.6 inch laptop with office 365, 4gb ram, 128gb s">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71Iv6sSCWSL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">15.6 Inch Laptop with Office 365, 4GB RAM, 128GB S</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad garantizada Amazon Prime.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">229.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 850.485 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -63% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GJ5FGFZT?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="tecnologia" data-title="hp omnibook laptop computer, intel core ultra 9 28">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71iEMxjNztL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">HP OmniBook Laptop Computer, Intel Core Ultra 9 28</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad garantizada Amazon Prime.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">1,199.00</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 4.433.806 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -37% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GKNRXMVB?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="ear wax removal tool camera - ear cleaner with 1080p hd came">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71y44vvDP6L._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Ear Wax Removal Tool Camera - Ear Cleaner with 1080P HD Came</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">9.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 36.942 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -52% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B09VPH33J8?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="hp new 15.6 inch laptop computer, 2026 edition, in">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61H4Jg4ZLUL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">HP New 15.6 inch Laptop Computer, 2026 Edition, In</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">299.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 1.109.339 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -43% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0G4NQS7PD?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="hp 14″rose gold lightweight laptop, with office 36">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71DtU1z-xVL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">HP 14″Rose Gold Lightweight Laptop, with Office 36</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">199.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 739.547 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -43% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0G2PR5LQ1?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="hp 15.6&quot; business laptop computer with micros">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61qBEorBJEL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">HP 15.6&quot; Business Laptop Computer with Micros</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">299.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 1.109.339 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -58% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GDRXBT3P?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="jayvar onion holder for slicing, onion cutter vege">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/718d5Zc8RXL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">JAYVAR Onion Holder for Slicing, Onion Cutter Vege</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">8.98</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 33.207 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -44% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0C9ZGMN9D?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="samodra bidet attachment, non-electric cold water ">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61IGdBkaALL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">SAMODRA Bidet Attachment, Non-Electric Cold Water </h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">23.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 88.713 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -40% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B07ZRC6717?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="stainless steel onion holder for slicing,onion sli">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71GTPDTsoPL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Stainless Steel Onion Holder for Slicing,Onion Sli</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">4.97</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 18.379 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -38% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B08TWN43G4?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="hoto laser measuring tool, pocket-size 98ft digita">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71o31-BdjXL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">HOTO Laser Measuring Tool, Pocket-Size 98Ft Digita</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">29.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 110.901 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -40% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B09156YD8P?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="ototo gracula garlic crusher, garlic mincer, also ">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71HqXf8PfIL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">OTOTO Gracula Garlic Crusher, Garlic Mincer, Also </h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">9.94</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 36.757 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -38% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B076CTTZKX?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="eufy security smart lock c220, fingerprint keyless">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71-10f9flzL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">eufy Security Smart Lock C220, Fingerprint Keyless</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">98.48</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 364.171 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -42% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0C7C69FPS?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="holikme dryer vent cleaner kit dryer lint vacuum a">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71yT-KSxZrL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Holikme Dryer Vent Cleaner Kit Dryer Lint Vacuum A</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">9.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 36.942 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -38% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B08SBQBF2R?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="surge protector, outlet extender with night light,">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/51fvNqvlFCL._AC_UL960_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Surge Protector, Outlet Extender with Night Light,</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">8.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 33.244 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -40% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B09XMMZSWW?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="2 packs electric candle lighters, windproof flamel">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/51hIlQl0IvL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">2 Packs Electric Candle Lighters, Windproof Flamel</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">5.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 22.151 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -40% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0DKDTBBF7?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="mini projector, elephas portable projector for iph">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61Ra0-2X8TL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Mini Projector, ELEPHAS Portable Projector for iPh</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">39.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 147.880 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -43% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B07YY87FXP?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="roku streaming stick hd — hd streaming device for ">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71GUOcJCzSL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Roku Streaming Stick HD — HD Streaming Device for </h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Calidad premium con descuento garantizado.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">15.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 59.130 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -47% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0DXXYS4BJ?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71idPxA-i0L._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">29.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 110.901 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -40% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0FWQZNYQX?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71Sbx9zQN3L._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">129.07</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 477.291 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -35% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0CWHXVLXG?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71qoCdsi7aL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">29.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 110.901 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -40% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0FWR9H9L9?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71Y6gpDqPdL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">54.44</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 201.315 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -87% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B08HL5K8JB?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61-4uuaXfZL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">19.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 73.921 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -85% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GK7MKH2R?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71xbOQHy6mL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">21.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 81.317 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -89% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GD7KJF8X?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/716R+vsHGVL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">649.98</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 2.403.574 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -46% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0G51YKMGX?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71LukXrl9XL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">629.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 2.329.653 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -63% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GFVSYGMW?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/41lArSiD5hL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">41.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 155.276 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -40% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0BS1PRC4L?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/51CnDMbXZzL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">44.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 166.369 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -36% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0C3HCD34R?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61DzAvRWJlL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">23.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 88.713 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -92% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0G6CNF8RM?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/51QSktkLy1L._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">44.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 166.369 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -36% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0CQXMXJC5?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta exclusiva seleccionada">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/61u-OaDSfQL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Exclusiva Seleccionada</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">199.95</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ 739.399 COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -43% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0C8PR4W22?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+        <div class="product-card bg-white border border-gray-200 rounded-sm p-4 flex flex-col h-full hover:shadow-lg transition-shadow cursor-pointer group" data-category="todo" data-title="oferta tecnológica premium">
+            <div class="h-44 flex items-center justify-center mb-4 overflow-hidden">
+                <img src="https://m.media-amazon.com/images/I/71giZ2fsJHL._AC_UY654_QL65_.jpg" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="flex-grow">
+                <h2 class="text-sm font-medium text-gray-900 line-clamp-2 mb-1 group-hover:text-[#C45500]">Oferta Tecnológica Premium</h2>
+                <div class="flex items-center mb-1 text-yellow-500 text-[10px] font-bold">
+                    <span>★★★★★</span> <span class="text-blue-600 ml-1 italic">Verificado</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mb-3 line-clamp-3 leading-snug border-l-2 border-orange-400 pl-2 italic">Oferta verificada para compras seguras.</p>
+                <div class="flex items-baseline gap-1">
+                    <span class="text-xs font-bold text-gray-900">US$</span>
+                    <span class="text-2xl font-bold text-gray-900">499.99</span>
+                </div>
+                <div class="text-[11px] text-green-700 font-black mb-1">≈ Consultar COP</div>
+                <div class="bg-[#CC0C39] text-white text-[9px] font-black px-2 py-0.5 rounded-sm inline-block mb-3 uppercase tracking-tighter">
+                    -44% DTO
+                </div>
+            </div>
+            <a href="https://www.amazon.com/dp/B0GG8V28VD?tag=deepsystem-20" target="_blank" class="w-full bg-[#FFD814] hover:bg-[#F7CA00] text-black text-[11px] font-bold py-2 rounded-full text-center border border-[#FCD200] shadow-sm">
+                Ver detalle en Amazon
+            </a>
+        </div>
+        
+                </div>
+            </main>
+
+            <aside class="hidden xl:flex w-72 flex-col gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-200 text-center">
+                    <h3 class="font-black text-xs text-orange-600 mb-2 uppercase italic tracking-tighter">⚡ Canal de Telegram</h3>
+                    <p class="text-[10px] text-gray-500 leading-relaxed mb-4">Recibe las alertas en tu celular antes que nadie.</p>
+                    <a href="https://t.me/ofertas_nico_vip" target="_blank" class="block w-full bg-[#0088cc] hover:bg-[#0077b5] text-white text-[10px] font-black py-3 rounded-xl shadow-lg transition-transform hover:scale-105">UNIRME AHORA</a>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="bg-[#131921] text-white text-center py-8 mt-10 border-t-4 border-[#FF9900]">
+            <div class="max-w-[1200px] mx-auto px-6 text-[10px] text-gray-400 leading-relaxed text-justify sm:text-center">
+                <p class="font-bold text-gray-200 text-xs mb-3 uppercase tracking-widest">Términos, Condiciones y Exención de Responsabilidad Legal</p>
+                <p class="mb-2"><strong>1. Naturaleza del Servicio:</strong> DEEP SYSTEM opera exclusivamente como un motor de búsqueda y curaduría de contenido automatizado. No somos una tienda virtual, no procesamos transacciones, pagos, ni recolectamos información financiera o personal de los visitantes.</p>
+                <p class="mb-2"><strong>2. Publicidad y Uso de Inteligencia Artificial:</strong> Los títulos, traducciones y beneficios mostrados en esta plataforma son generados mediante algoritmos de Inteligencia Artificial (IA) basándose estrictamente en la información pública proporcionada por los vendedores en Amazon. DEEP SYSTEM se exime de toda responsabilidad legal por inexactitudes, errores de traducción, omisiones o reclamaciones asociadas a publicidad engañosa. La validación final y absoluta de las características técnicas del producto recae en el comprador, quien debe verificarlas directamente en la página oficial del vendedor final antes de ejecutar el pago.</p>
+                <p class="mb-2"><strong>3. Precios y Disponibilidad:</strong> Los precios, descuentos y la disponibilidad de los inventarios son dinámicos y están sujetos a cambios inmediatos sin previo aviso por parte de Amazon.com. El único precio legalmente válido y vinculante será el que se muestre en el carrito de compras de Amazon.com al momento de finalizar la transacción.</p>
+                <p class="mb-2"><strong>4. Relación de Afiliación y Garantías:</strong> En calidad de Afiliado de Amazon, DEEP SYSTEM obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Toda política de garantía, logística de envío a Colombia, política de devoluciones y soporte posventa son responsabilidad exclusiva y directa de Amazon.com y sus vendedores asociados.</p>
+                <p class="mt-4 text-[#FF9900] italic font-bold text-xs">© 2026 DEEP SYSTEM. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                document.querySelectorAll('.product-card').forEach(card => {
+                    const title = card.getAttribute('data-title');
+                    card.style.display = title.includes(term) ? 'flex' : 'none';
+                });
+            });
+
+            function filterCategory(cat) {
+                document.querySelectorAll('.product-card').forEach(card => {
+                    const cardCat = card.getAttribute('data-category');
+                    const title = card.getAttribute('data-title').toLowerCase();
+                    
+                    if (cat === 'todo') {
+                        card.style.display = 'flex';
+                        return;
+                    }
+                    
+                    let match = (cardCat === cat);
+                    if (!match) {
+                        if (cat === 'tecnologia' && (title.includes('laptop') || title.includes('pc') || title.includes('smart') || title.includes('cámara') || title.includes('auricular') || title.includes('reloj'))) match = true;
+                        if (cat === 'hogar' && (title.includes('cocina') || title.includes('cuchillo') || title.includes('limpiador') || title.includes('bidet') || title.includes('luz'))) match = true;
+                        if (cat === 'gaming' && (title.includes('juego') || title.includes('mouse') || title.includes('teclado') || title.includes('nintendo') || title.includes('play'))) match = true;
+                    }
+                    
+                    card.style.display = match ? 'flex' : 'none';
+                });
+            }
+        </script>
+    </body>
+    </html>
+    
